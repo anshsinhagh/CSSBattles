@@ -1,0 +1,74 @@
+<div class="frame">
+  <div class="mask top">
+    <div class="eyes"></div>
+  </div>
+  <div class="mask bottom"></div>
+  <div class="baseplate one"></div>
+  <div class="baseplate two"></div>
+  <div class="mouth"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    position: absolute;
+  }
+  .frame {
+    background-color: #373794;
+    width: 400px;
+    height: 300px;
+    position: relative;
+  }
+  .baseplate.one {
+    width: 80px;
+    height: 17px;
+    border-radius: 50% 50% 0 0;
+    border-bottom: 48px solid #F3AC3C;
+    background: #F3AC3C;
+    margin: auto;
+    top: 87px;
+    position: relative;
+  }
+  .baseplate.two {
+    width: 54px;
+    height: 51px;
+    top: 177px;
+    left: 173px;
+    border-radius: 0 0 50% 50%;
+    background: #F3AC3C; 
+  }
+  .mask.top {
+    width: 100px;
+    height: 70px;
+    top: 107px;
+    left: 100px;
+    background-color: #0E0E39;
+    border-radius: 0 58px 0 80px;
+    z-index: 5;
+    -webkit-box-reflect: right;
+  }
+  .mask.bottom {
+    width: 80px;
+    height: 42px;
+    background-color: #0E0E39;
+    top: 175px;
+    left: 160px;
+    border-radius: 0 0 40px 40px;
+  }
+  .eyes {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    background: white;
+    top: 39;
+    left: 65;
+    border-radius: 0 24px 0 24px;
+  }
+  .mouth {
+    top: 190px;
+    left: 180px;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: white;
+  }
+</style>
