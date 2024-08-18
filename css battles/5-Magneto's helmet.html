@@ -1,0 +1,62 @@
+<div class="frame">
+  <div class="base"></div>
+  <div class="eyehole"></div>
+  <div class="eyehole-cover"></div>
+  <div class="mouth"></div>
+  <div class="chin"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    position: absolute;
+  }
+  .frame {
+    width: 400px;
+    height: 300px;
+    background: #232323;
+    display: flex;
+  }
+  .base {
+    position: relative;
+    margin: 34px auto;
+    width: 160px;
+    height: 238px;
+    background: #AF3A3A;
+    border-radius: 80px 80px 0 0;
+    clip-path: polygon(0px 0px, 160px 0px, 160px 214px, 122px 238px, 38px 238px, 0px 214px);
+  }
+  .eyehole {
+    width: 120px;
+    height: 70px;
+    background: #232323;
+    left: 140px;
+    top: 87px;
+    border-radius: 50%;
+  }
+  .eyehole-cover {
+    background: #AF3A3A;
+    width: 64px;
+    height: 24px;
+    border-radius: 50%;
+    left: 168px;
+    top: 78px;
+  }
+  .mouth {
+    background: #232323;
+    width: 70px;
+    height: 98px;
+    left: 165px;
+    top: 150px;
+  }
+  .chin {
+    width: 84px;
+    height: 25px;
+    background: orange;
+    left: 158px;
+    top: 248px;
+    border-left: 15px solid #AF3A3A;
+    border-right: 15px solid #AF3A3A;
+    border-bottom: 25px solid #232323;
+    box-sizing: border-box;
+  }
+</style>
