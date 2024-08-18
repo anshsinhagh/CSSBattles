@@ -1,0 +1,77 @@
+<div id="frame">
+  <div id="circle"></div>
+  <div id="square"></div>
+  <div class="rect one"></div>
+  <div class="rect two"></div>
+  <div class="eyes one"></div>
+  <div class="eyes two"></div>
+  <div class="nose"></div>
+</div>
+<style>
+  * {
+    position: absolute;
+    margin: 0;
+  }
+  #frame {
+    background: #CAE5DC;
+    width: 400;
+    height: 300;
+  }
+  #circle {
+    position: relative;
+    background: #000000;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: auto;
+    top: 40px;
+  }
+  #square {
+    position: relative;
+    background: #000000;
+    margin: auto;
+    width: 100px;
+    height: 40px;
+  }
+  .rect {
+    width: 16px;
+    height: 93px;
+    background: #000000;
+    -webkit-box-reflect: right 4px;
+  }
+  .rect.one {
+    left: 162;
+  }
+  .rect.two {
+    left: 202;
+  }
+  .eyes {
+    width: 47px;
+    height: 47px;
+    background: #CAE5DC;
+    border-radius: 50%;
+    clip-path: inset(50% 0 0 0);
+  }
+  .eyes.one {
+    left: 144px;
+    top: 96px;
+    transform: rotate(28deg);
+  }
+  .eyes.two {
+    left: 209px;
+    top: 96px;
+    transform: rotate(-28deg);
+  }
+  .nose {
+    width: 21px;
+    height: 31px;
+    background: #CAE5DC;
+    position: relative;
+    left: 189px;
+    top: -45px;
+    box-sizing: border-box;
+    border-bottom: 31px solid #CAE5DC;
+    border-right: 10px solid #000000;
+    border-left: 10px solid #000000;
+  }
+</style>
